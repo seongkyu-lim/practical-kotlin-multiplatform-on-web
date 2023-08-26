@@ -6,6 +6,7 @@ import kotlinx.html.dom.create
 import kotlinx.html.h1
 import react.create
 import react.dom.client.createRoot
+import todoapp.ui.App
 import todoapp.ui.welcome.WelcomePage
 
 /**
@@ -24,9 +25,8 @@ fun main() {
 //        }
 //    )
     createRoot(container = container).render(
-        WelcomePage.create{
-            name = "Seongkyu lim"
-        }
+        App.create()
+
     )
 
 }
